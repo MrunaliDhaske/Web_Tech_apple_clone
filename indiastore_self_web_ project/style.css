@@ -1,0 +1,159 @@
+#navbar{
+  /* margin-top: -60px; */
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+.sidebar {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+  }
+  
+  /* The sidebar links */
+  .sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidebar a:hover {
+    color: #f1f1f1;
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  /* The button used to open the sidebar */
+  .openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+  }
+  
+  .openbtn:hover {
+    background-color: #444;
+  }
+  
+  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+  #main {
+    transition: margin-left .5s; /* If you want a transition effect */
+    padding: 20px;
+  }
+  /* #d-flex input{
+    display: inline-block;
+
+  } */
+  
+  ::placeholder{
+    color: white;
+  }
+
+  #x ul,#x li{
+    display: inline-block;
+}
+#x{
+    background-color: black;
+    color: white;
+    text-align: center;
+    margin-top: -16px;
+}
+#x i{
+    font-size: 90px;
+
+}
+#x li{
+    padding: 25px 150px;
+    overflow: hidden;
+}
+#y ul,#y li{
+  display: inline-block;
+}
+#y{
+  background-color: black;
+  color: white;
+  text-align: center;
+  margin-top: -30px;
+}
+#y li{
+  padding:0px 150px;
+}
+/* carousel for text */
+body{
+  background-color: #000;
+}
+/* .carousel1{
+  margin-top: 50px;
+}
+.carousel-inner1{
+  height: 100px;
+}
+.carousel-caption1{
+  color: black;
+  top: 50%;
+} */
+table{
+  width: 97%;
+  margin: 70px;
+}
+th{
+  font-size: 40px;
+  color: white;
+}
+td{
+  font-size: 35px;
+  padding: 10px;
+  color: white;
+}
+#icons ul,#icons li{
+  display: inline-block;
+}
+#icons i{
+  font-size: 25px;
+  color: white;
+}
+#icons li{
+  padding: 10px;
+}
+#icons ul{
+  float: right;
+  margin-top: 20px;
+}
+
+.vl {
+  margin-top: 7px;
+  border-left: 2px solid rgb(199, 193, 193);
+  height: 90px;
+}
+/* #end img{
+  border-left: 6px solid black;
+  height: 500px;
+} */
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+  }
+  
+  

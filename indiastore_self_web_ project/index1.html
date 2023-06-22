@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indiastore:Apple Premium clone</title>
+    <link rel="stylesheet" href="./font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./static/favicon.ico" type="image/x-icon">
+    <script src="./script.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="navbar">
+        <nav class="navbar navbar-expand-lg bg-black">
+            <div class="container-fluid">
+                <div id="mySidebar" class="sidebar">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <a href="#">Home</a>
+                    <a href="#">iphone</a>
+                    <a href="#">Mac</a>
+                    <a href="#">Ipad</a>
+                    <a href="#">Watch</a>
+                    <a href="#">Airpods</a>
+                    <a href="#">TV</a>
+                    <a href="#">Home</a>
+                </div>
+                
+                <div id="main">
+                    <button class="openbtn " onclick="openNav()">&#9776; </button>
+                </div>
+            
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link logo text-white float-right" ><img src="./static/logo.png" alt=""></i></a>
+                    </li>
+                </ul>
+                    <form class="d-flex" role="search">
+                        <div>
+                            <input type="text" placeholder="Search" name="search" style="color: black; height: 50px; width: 650px; background-color: black; border-radius: 30px; padding: 15px; margin-top: 3px;margin-left: 100px; border-color: white;">
+                            <!-- <i class="fa fa-search" aria-hidden="true" style="color: white;"></i> -->
+                        </div>
+                    </form>
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <i class="fa fa-map-marker text-white" aria-hidden="true" style="font-size: 30px; text-align: center; margin-left: 220px;"></i><br> 
+                            <span class="menu-title text-white" style="margin-left: 200px;">Location</span>
+                        </li>
+                        <li class="nav-item">
+                            <i class="fa fa-gift text-white" aria-hidden="true" style="font-size: 30px; text-align: center; margin-left: 150px;"></i><br> 
+                            <span class="menu-title text-white" style="margin-left: 140px;">Offers</span>
+                        </li>
+                   </ul>
+            </div>
+            </div>
+        </nav>
+    </div><br><br><br><br><br>
+
+      <!-- logos after navbar code -->
+    <div id="x">
+        <ul>
+          <li><i class="fa fa-mobile" aria-hidden="true"></i></li>
+          <li><i class="fa fa-laptop" aria-hidden="true"></i></li>
+          <li><i class="fa fa-tablet" aria-hidden="true"></i></li>
+          <li><i class="fa fa-clock-o" aria-hidden="true"></i></li>
+          <li><i class="fa fa-podcast" aria-hidden="true"></i></li>
+          <!-- <li><i class="fa fa-television" aria-hidden="true"></i></li> -->
+        </ul>
+    </div>
+      <!-- text after logos -->
+    <div id="y">
+        <ul>
+          <li style="margin-right: 150px;">ipone</li>
+          <li>Mac</li>
+          <li>ipad</li>
+          <li>Watch</li>
+          <li>airpods</li>
+        </ul>
+    </div>
+    <!-- Image coursel1 code -->
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./static/c1i1.jpg" class="d-block w-100 vertical-align-middle" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./static/c1i2.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./static/c1i3.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./static/c1i4.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    
+    <!-- Image coursel2 code -->
+    <div id="scroll">
+        <img src="./static/c2i1.png" alt="" id="scrollimg" style="margin-left: 160px; margin-top: -40px; position: relative;">
+        <button type="submit" onclick="sdf()" style="float: left; margin-left: 300px; margin-top: 40px;">
+            <span class=" carousel-control-prev-icon bg-black" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button type="submit" onclick="sdf()" style="float: right; margin-right: 300px; margin-top: 40px;">
+            <span class="carousel-control-next-icon bg-black" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+        <!-- <button type="submit" onclick="sdf()" value = "Display">></button>
+        <button type="submit" onclick="sdf()" value = "Display"><</button> -->
+    </div>
+
+    <!-- Image coursel3 code -->
+    <!-- <div id="carouselExample" class="carousel slide display-inline bg-black" style="margin-top: 100px;">
+        <h3 style="display: inline-block; color: white;margin-left: 50px;margin-top: 30px;">Stories</h3>
+        <div class="carousel-inner">
+            <ul>
+                <li>
+                    <div class="carousel-item active">
+                        <img src="./static/c3i1.png" class="d-block" style="border-radius: 50%; border: 5px solid black; width: 250px; height: 250px" alt="...">
+                    </div>
+                </li>
+                <li>
+                    <div class="carousel-item">
+                        <img src="./static/c3i2.png" class="d-block" style="border-radius: 50%; border: 5px solid black; width: 250px; height: 250px" alt="...">
+                    </div>
+                </li>
+                <li>
+                    <div class="carousel-item">
+                        <img src="./static/c3i3.png" class="d-block" style="border-radius: 50%; border: 5px solid black; width: 250px; height: 250px" alt="...">
+                    </div>
+                </li>
+                <li>
+                    <div class="carousel-item">
+                        <img src="./static/c3i4.png" class="d-block" style="border-radius: 50%; border: 5px solid black; width: 250px; height: 250px" alt="...">
+                    </div>
+                </li>
+                <li>
+                    <div class="carousel-item">
+                        <img src="./static/c3i5.png" class="d-block" style="border-radius: 50%; border: 5px solid black; width: 250px; height: 250px" alt="...">
+                    </div>
+                </li>
+            </ul>
+          <!-- <div class="carousel-item active">
+            <img src="./static/c3i1.png" class="d-block" style="border-radius: 50%; border: 5px solid black; width: 250px; height: 250px;" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./static/c3i2.png" class="d-block" style="border-radius: 50%; border: 5px solid black; width: 250px; height: 250px;" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./static/c3i3.png" class="d-block" style="border-radius: 50%; border: 5px solid black; width: 250px; height: 250px;" alt="...">
+          </div>
+          <div class="carousel-item active">
+            <img src="./static/c3i4.png" class="d-block" style="border-radius: 50%; border: 5px solid black; width: 250px; height: 250px;" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./static/c3i5.png" class="d-block" style="border-radius: 50%; border: 5px solid black; width: 250px; height: 250px;" alt="...">
+          </div> -->
+        <!-- </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon bg-black" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon bg-black" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+    </div> --> -->
+
+    <!-- Image coursel3 code -->
+    <div id="carouselExample" class="carousel slide display-inline bg-black" style="margin-top: 100px;">
+        <h3 style="display: inline-block; color: white;margin-left: 50px;margin-top: 10px; margin-left: 390px;">Stories</h3>
+        <div class="carousel-inner">
+            <ul>
+                <li>
+                    <div class="carousel-item active">
+                        <img src="./static/tp1.jpeg" class="d-block" style="width: 1000px; height: 150px; margin-left: 400px; margin-top: -20px;" alt="...">
+                    </div>
+                </li>
+                <li>
+                    <div class="carousel-item">
+                        <img src="./static/tp2.jpeg" class="d-block" style="width: 1000px; height: 150px; margin-left: 400px; margin-top: -20px;" alt="...">
+                    </div>
+                </li>
+                <li>
+                    <div class="carousel-item">
+                        <img src="./static/tp3.jpeg" class="d-block" style="width: 1000px; height: 150px; margin-left: 400px; margin-top: -20px;" alt="...">
+                    </div>
+                </li>
+                <li>
+                    <div class="carousel-item">
+                        <img src="./static/tp4.jpeg" class="d-block" style="width: 1000px; height: 150px; margin-left: 400px; margin-top: -20px;" alt="...">
+                    </div>
+                </li>
+                <li>
+                    <div class="carousel-item">
+                        <img src="./static/tp5.jpeg" class="d-block" style="width: 1000px; height: 150px; margin-left: 400px; margin-top: -20px;" alt="...">
+                    </div>
+                </li>
+            </ul>
+          <!-- <div class="carousel-item active">
+            <img src="./static/c3i1.png" class="d-block" style="border-radius: 50%; border: 5px solid black; width: 250px; height: 250px;" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./static/c3i2.png" class="d-block" style="border-radius: 50%; border: 5px solid black; width: 250px; height: 250px;" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./static/c3i3.png" class="d-block" style="border-radius: 50%; border: 5px solid black; width: 250px; height: 250px;" alt="...">
+          </div>
+          <div class="carousel-item active">
+            <img src="./static/c3i4.png" class="d-block" style="border-radius: 50%; border: 5px solid black; width: 250px; height: 250px;" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./static/c3i5.png" class="d-block" style="border-radius: 50%; border: 5px solid black; width: 250px; height: 250px;" alt="...">
+          </div> -->
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon bg-black" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon bg-black" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+       
+
+      <!-- card coursel4 code -->
+      <section class="pt-5 pb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <h3 class="mb-3">Trending Offers </h3>
+                </div>
+                <div class="col-12">
+                    <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
+    
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="row">
+    
+                                    <div class="col-md-4 mb-3">
+                                        <div class="card">
+                                            <img class="img-fluid" alt="100%x280" src="./static/c4i1.jpg">
+    
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <div class="card">
+                                            <img class="img-fluid" alt="100%x280" src="./static/c4i2.jpg">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <div class="card">
+                                            <img class="img-fluid" alt="100%x280" src="./static/c413.jpg">
+                                        </div>
+                                    </div>
+    
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+    
+                                    <div class="col-md-4 mb-3">
+                                        <div class="card">
+                                            <img class="img-fluid" alt="100%x280" src="./static/c414.jpg">
+    
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <div class="card">
+                                            <img class="img-fluid" alt="100%x280" src="./static/c4i5.jpg">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <div class="card">
+                                            <img class="img-fluid" alt="100%x280" src="./static/c4i1.jpg">
+                                        </div>
+                                    </div>
+    
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon bg-black" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide="next">
+                            <span class="carousel-control-next-icon bg-black" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- product categories images -->
+    <div class="productimages">
+        <div style="margin-left: 250px;">
+            <h1>Product Categories</h1>
+        </div>
+        <div class="parent" style="display: flex; column-gap: 5px; margin-left: 250px;">
+            <div>
+                <img src="./static/p1.jpg">
+            </div>
+            <div>
+                <img src="./static/p2.jpg">
+            </div>
+            <div>
+                <img src="./static/p3.jpg">
+            </div>
+        </div><br>
+        <div class="parent" style="display: flex; column-gap: 5px; margin-left: 250px;">
+            <div>
+                <img src="./static/p4.jpg">
+            </div>
+            <div>
+                <img src="./static/p5.jpg">
+            </div>
+            <div>
+                <img src="./static/p6.jpg">
+            </div>
+        </div><br>
+        <div class="parent" style="display: flex; column-gap: 5px; margin-left: 250px;">
+            <div>
+                <img src="./static/p7.jpg">
+            </div>
+            <div>
+                <img src="./static/p8.jpg">
+            </div>
+            <div>
+                <img src="./static/p9.jpg">
+            </div>
+        </div>
+    </div>
+
+    <!-- Apple Resellers Section code -->
+    <div class="productimages">
+        <div style="margin-left: 250px;margin-top: 100px;">
+            <h1>Apple Premium Resellers</h1>
+        </div>
+        <div class="parent" style="display: flex; column-gap: 3px; margin-left: 250px; padding: 40px; margin-right: 250px;">
+            <div>
+                <img src="./static/ap1.png" style="width: 300px; height: 300px;">
+            </div>
+            <div>
+                <img src="./static/ap2.png" style="width: 300px; height: 300px;">
+            </div>
+            <div>
+                <img src="./static/ap3.png" style="width: 300px; height: 300px;">
+            </div>
+            <div>
+                <img src="./static/ap4.png" style="width: 300px; height: 300px;">
+            </div>
+        </div><br>
+        <div class="parent" style="display: flex; column-gap: 3px; margin-left: 250px; padding: 40px; margin-right: 250px;">
+            <div>
+                <img src="./static/ap5.png" style="width: 300px; height: 300px;">
+            </div>
+            <div>
+                <img src="./static/ap6.png" style="width: 300px; height: 300px;">
+            </div>
+            <div>
+                <img src="./static/ap7.png" style="width: 300px; height: 300px;">
+            </div>
+            <div>
+                <img src="./static/a8.png" style="width: 300px; height: 300px;">
+            </div>
+        </div><br>
+        <div class="parent" style="display: flex; column-gap: 3px; margin-left: 250px; padding: 40px; margin-right: 250px;">
+            <div>
+                <img src="./static/a9.png" style="width: 300px; height: 300px;">
+            </div>
+            <div>
+                <img src="./static/a10.png" style="width: 300px; height: 300px;">
+            </div>
+            <div>
+                <img src="./static/a11.png" style="width: 300px; height: 300px;">
+            </div>
+            <div>
+                <img src="./static/a12.png" style="width: 300px; height: 300px;">
+            </div>
+        </div><br>
+        <div class="parent" style="display: flex; column-gap: 5px; margin-left: 250px; padding: 40px; margin-right: 250px;">
+            <div>
+                <img src="./static/a13.png" style="width: 300px; height: 300px;">
+            </div>
+            <div>
+                <img src="./static/a14.png" style="width: 300px; height: 300px;">
+            </div>
+        </div>
+    </div>
+
+    <div class="ls bg-black">
+        <div style="margin-left: 250px;margin-top: 100px; color: white;">
+            <h1>Locate A Store Near You</h1>
+        </div>
+        <div class="form" style="margin-left: 250px; margin-top: 50px; display: inline-block;">
+            <h5><input type="text" placeholder="Enter Pincode" name="Pincode" style="color: black; height: 50px; width: 350px; background-color: black; border: 1px solid white;"></h5>
+            <h5><p style="color: white; margin-left: 400px; margin-top: -45px;">OR</p></h5>
+            <h5><select class="form-control arrow-select" name="frmstate_2" id="frmstate_2" style="margin-left: 500px; margin-top: -50px; height: 50px;width: 350px; background-color: black; color: white;"> 
+                    <option value="">Select State</option> 
+                    <option value="1">Andhra Pradesh</option> 
+                    <option value="2">Assam</option> 
+                    <option value="3">Bihar</option> 
+                    <option value="32">Chandigarh</option> 
+                    <option value="4">Chhattisgarh</option> 
+                    <option value="5">Delhi</option> 
+                    <option value="6">Goa</option> <option value="7">Gujarat</option> <option value="8">Haryana</option> <option value="9">Himachal Pradesh</option> <option value="10">Jammu And Kashmir</option> <option value="11">Jharkhand</option> <option value="12">Karnataka</option> <option value="13">Kerala</option> <option value="14">Madhya Pradesh</option> <option value="15">Maharashtra</option> <option value="16">Manipur</option> <option value="17">Meghalaya</option> <option value="18">Mizoram</option> <option value="19">Nagaland</option> <option value="20">Orissa</option> <option value="21">Pondicherry</option> <option value="22">Punjab</option> <option value="23">Rajasthan</option> <option value="24">Sikkim</option> <option value="25">Tamil Nadu</option> <option value="26">Telangana</option> <option value="27">Tripura</option> <option value="28">Uttar Pradesh</option> <option value="29">Uttarakhand</option> <option value="31">West Bengal</option> 
+                </select>
+            </h5>
+            <h5><select class="form-control arrow-select" name="frmcity" id="frmcity" style="margin-left: 1000px; margin-top: -53px; height: 50px;width: 350px; background-color: black; color: white;">
+                    <option value="">select city</option>
+                    <option value="kalyan">kalyan</option>
+                    <option value="thane">thane</option>
+                    <option value="mumbai">mumbai</option>
+                </select>
+            </h5>
+            <div class="btn" style="margin-left: 600px; margin-top: 30px;">
+                <button type="button" class="btn btn-primary bg-aqua">Search</button>
+                <!-- <button>Search</button> -->
+            </div><br>
+
+            <table>
+                <tr>
+                  <th>Explore</th>
+                  <th>Offers</th>
+                  <th>About Us</th>
+                </tr>
+                <tr>
+                  <td>iphone</td>
+                  <td>offers</td>
+                  <td>Connect with us</td>
+                </tr>
+                <tr>
+                  <td>Mac</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>ipad</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                    <td>Watch</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>TV</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Homepad</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+            <div id="icons">
+                <ul style="margin-top: -420px; margin-right: 400px;">
+                    <li><i class="fa fa-facebook-official" aria-hidden="true"></i></li>
+                    <li><i class="fa fa-twitter" aria-hidden="true"></i></li>
+                    <li><i class="fa fa-youtube-play" aria-hidden="true"></i></li>
+                    <li><i class="fa fa-instagram" aria-hidden="true"></i></li>
+                </ul>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="end" style="display: flex; column-gap: 5px; margin-left: 580px;">
+        <div>
+            <img src="./static/l1.png" style="height: 100px; width: 250px;">
+        </div>
+        <div class="vl"></div>
+        <div>
+            <img src="./static/l2.png" style="height: 100px; width: 250px;">
+        </div>
+        <div class="vl"></div>
+        <div>
+            <img src="./static/l3.png" style="height: 50px; width: 250px; margin-top: 20px;">
+        </div>
+    </div>
+    <hr>
+    <div class="rights">
+        <h5 style="margin-left: 750px;">@Indiastore MrunaliDhaske.All rights reserverd</h5>
+    </div><br>
+</body>
+</html>
